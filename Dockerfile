@@ -1,7 +1,7 @@
 # Use the latest Golang image as the base image
 FROM golang:latest
 
-# Set the working directory inside the container to /app
+# Set the working directory inside the container to /
 WORKDIR /
 
 # Copy the current directory contents into the container at /
