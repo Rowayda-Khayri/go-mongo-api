@@ -1,0 +1,21 @@
+# Specify the version of Docker Compose
+version: '3'
+
+# Define services for the application
+services:
+  # Service for the main application
+  app:
+    # Build the Docker image for the application using the current context
+    build:
+      context: .
+    # Expose port 8080 on the host and map it to port 8080 on the container
+    ports:
+      - "8080:8080"
+
+  # Service for MongoDB
+  mongodb:
+    # Use the official MongoDB image from Docker Hub
+    image: mongo
+    # Expose port 27017 on the host and map it to port 27017 on the container
+    ports:
+      - "27017:27017"
