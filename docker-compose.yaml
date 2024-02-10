@@ -11,6 +11,7 @@ services:
     # Expose port 8080 on the host and map it to port 8080 on the container
     ports:
       - "8080:8080"
+    command: ["./main"]
 
   # Service for MongoDB
   mongodb:
@@ -18,4 +19,4 @@ services:
     image: mongo
     # Expose port 27017 on the host and map it to port 27017 on the container
     ports:
-      - "27017:27017"
+      - "27018:27017"
