@@ -11,6 +11,7 @@ services:
     # Expose port 8080 on the host and map it to port 8080 on the container
     ports:
       - "8080:8080"
+    # Specify the command to run when the container starts, pointing to the compiled Go application.
     command: ["./main"]
 
   # Service for MongoDB
